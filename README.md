@@ -102,7 +102,8 @@ Connected a router to the VLAN-segmented switch from Project 3, allowing devices
 
 ### Screenshots
 
+<img width="1358" height="555" alt="Screenshot_2026-08-16_16-43-43" src="https://github.com/user-attachments/assets/6be6df4e-9cd8-49f0-ac7a-497d3eb7310d" />
 <img width="1366" height="733" alt="Screenshot_2026-08-16_16-45-39" src="https://github.com/user-attachments/assets/9f392bed-f2f7-4ea4-8b3f-caebed51a297" />
 <img width="1366" height="277" alt="Screenshot_2026-08-16_16-44-05" src="https://github.com/user-attachments/assets/474ad379-2069-4041-bbe7-fadee34df094" />
 <img width="753" height="650" alt="Screenshot_2026-08-16_16-44-38" src="https://github.com/user-attachments/assets/420b4c8d-698e-429d-b2a3-400fb70d477f" />
-<img width="1358" height="555" alt="Screenshot_2026-08-16_16-43-43" src="https://github.com/user-attachments/assets/6be6df4e-9cd8-49f0-ac7a-497d3eb7310d" />
+
