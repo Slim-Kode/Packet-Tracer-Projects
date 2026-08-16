@@ -72,4 +72,37 @@ Built a switched network with 3 separate VLANs to demonstrate Layer 2 network is
 
 <img width="1366" height="700" alt="Screenshot_2026-08-13_14-54-54" src="https://github.com/user-attachments/assets/9e66cef9-ff0c-423d-9db3-207f2f0b0fe8" />
 <img width="1366" height="211" alt="Screenshot_2026-08-13_14-55-34" src="https://github.com/user-attachments/assets/e8440a1e-b3c1-4528-99f6-a9895ce2bdfd" />
-<img width="840" height="717" alt="Screenshot_2026-08-13_14-56-28" src="https://github.com/user-attachments/assets/3bed2a54-3ffc-4127-877e-c3fdd38f27d9" />
+
+---
+
+## Project 4: Inter-VLAN Routing (Router-on-a-Stick)
+
+Connected a router to the VLAN-segmented switch from Project 3, allowing devices in different VLANs to communicate with each other through a single physical link — a setup known as "router-on-a-stick."
+
+### What I did
+- Connected a router to the switch using a single physical link
+- Configured the switch port facing the router as a trunk, allowing multiple VLANs to travel over that one connection
+- Created a subinterface on the router for each VLAN (G0/0.2, G0/0.3, G0/0.4), each tagged with 802.1Q encapsulation matching its VLAN
+- Assigned each subinterface an IP address acting as the default gateway for that VLAN
+- Set static IPs and matching default gateways on each PC based on their VLAN
+- Verified all interfaces were up using `show ip interface brief`
+- Tested and confirmed successful ping between PCs in different VLANs
+
+### Tools used
+- Cisco Packet Tracer
+- Router CLI (IOS commands)
+
+### What I learned
+- How a single physical link can carry multiple VLANs using trunking and 802.1Q tagging
+- How router subinterfaces act as separate logical gateways for each VLAN, despite sharing one physical interface
+- The full path traffic takes between VLANs: PC → gateway (subinterface) → router → destination VLAN's subinterface → destination PC
+- How to troubleshoot systematically using `show ip interface brief` to isolate configuration issues rather than guessing
+- That a single dropped packet on the very first ping attempt between two devices is normal (ARP resolution), not a fault
+- This concept took real effort to click — had to rebuild the mental model from scratch before the configuration actually worked, which reinforced the "why" behind each command rather than just memorizing syntax
+
+### Screenshots
+
+<img width="1366" height="733" alt="Screenshot_2026-08-16_16-45-39" src="https://github.com/user-attachments/assets/9f392bed-f2f7-4ea4-8b3f-caebed51a297" />
+<img width="1366" height="277" alt="Screenshot_2026-08-16_16-44-05" src="https://github.com/user-attachments/assets/474ad379-2069-4041-bbe7-fadee34df094" />
+<img width="753" height="650" alt="Screenshot_2026-08-16_16-44-38" src="https://github.com/user-attachments/assets/420b4c8d-698e-429d-b2a3-400fb70d477f" />
+<img width="1358" height="555" alt="Screenshot_2026-08-16_16-43-43" src="https://github.com/user-attachments/assets/6be6df4e-9cd8-49f0-ac7a-497d3eb7310d" />
