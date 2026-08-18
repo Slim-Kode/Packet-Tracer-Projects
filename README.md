@@ -107,3 +107,31 @@ Connected a router to the VLAN-segmented switch from Project 3, allowing devices
 <img width="1366" height="277" alt="Screenshot_2026-08-16_16-44-05" src="https://github.com/user-attachments/assets/474ad379-2069-4041-bbe7-fadee34df094" />
 <img width="753" height="650" alt="Screenshot_2026-08-16_16-44-38" src="https://github.com/user-attachments/assets/420b4c8d-698e-429d-b2a3-400fb70d477f" />
 
+--
+
+## Project 5: Multi-Site Network with Static Routing
+
+Connected 3 separate site networks (simulating different company office locations) using routers linked in a triangle topology, with manually configured static routes allowing full communication between all sites.
+
+### What I did
+- Built 3 separate LAN sites, each with its own switch and PC
+- Connected 3 routers in a triangle topology using serial links, with each link on its own dedicated subnet
+- Configured static routes on each router to reach the other two sites' LAN networks
+- Verified connectivity at each stage — router-to-router first, then full end-to-end PC-to-PC across all sites
+
+### Tools used
+- Cisco Packet Tracer
+- Router CLI (IOS commands)
+
+### What I learned
+- The critical difference between a destination network address, a next-hop IP, and a device IP — mixing these up was the root cause of a multi-day troubleshooting struggle
+- How static routes work: telling a router "to reach this network, send traffic to this neighbor" rather than the router discovering it automatically
+- The importance of testing incrementally — confirming direct router-to-router connectivity before layering static routes on top, rather than testing everything at once
+- Real persistence in troubleshooting — this project took several days longer than expected due to one small misconfiguration, and getting through it taught more than a smooth build would have
+
+### Screenshots
+
+<img width="1364" height="558" alt="Screenshot_2026-08-19_00-07-36" src="https://github.com/user-attachments/assets/81606088-a767-4b8b-bb45-600032594273" />
+<img width="1366" height="216" alt="Screenshot_2026-08-19_00-17-45" src="https://github.com/user-attachments/assets/4dedb297-5de2-4f71-8c15-302c1fb783b7" />
+<img width="1366" height="734" alt="Screenshot_2026-08-19_00-16-51" src="https://github.com/user-attachments/assets/9c4823d8-84a2-42a0-b96e-e90f581aa6b7" />
+<img width="700" height="604" alt="Screenshot_2026-08-18_23-59-32" src="https://github.com/user-attachments/assets/90d51273-f131-4dd2-b04d-024dce88fcad" />
