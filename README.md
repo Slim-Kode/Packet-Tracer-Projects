@@ -161,7 +161,8 @@ Configured a dedicated server device to provide both DHCP and DNS services to a 
 
 ### Screenshots
 
+<img width="1366" height="701" alt="Screenshot_2026-08-19_23-53-26" src="https://github.com/user-attachments/assets/81fd8420-90df-4d53-9a73-1704f646af9c" />
 <img width="1366" height="736" alt="Screenshot_2026-08-19_23-50-52" src="https://github.com/user-attachments/assets/032f6077-dc23-4249-9986-5667061f532a" />
 <img width="1366" height="733" alt="Screenshot_2026-08-19_23-51-05" src="https://github.com/user-attachments/assets/e535970c-b1a2-4a83-8fc0-9e0c3386d740" />
 <img width="1366" height="736" alt="Screenshot_2026-08-19_23-53-08" src="https://github.com/user-attachments/assets/de502c06-cef6-49ca-b51b-6bf5740530f7" />
-<img width="1366" height="701" alt="Screenshot_2026-08-19_23-53-26" src="https://github.com/user-attachments/assets/81fd8420-90df-4d53-9a73-1704f646af9c" />
+
