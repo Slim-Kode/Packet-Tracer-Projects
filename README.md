@@ -135,3 +135,33 @@ Connected 3 separate site networks (simulating different company office location
 <img width="1366" height="216" alt="Screenshot_2026-08-19_00-17-45" src="https://github.com/user-attachments/assets/4dedb297-5de2-4f71-8c15-302c1fb783b7" />
 <img width="1366" height="734" alt="Screenshot_2026-08-19_00-16-51" src="https://github.com/user-attachments/assets/9c4823d8-84a2-42a0-b96e-e90f581aa6b7" />
 <img width="700" height="604" alt="Screenshot_2026-08-18_23-59-32" src="https://github.com/user-attachments/assets/90d51273-f131-4dd2-b04d-024dce88fcad" />
+
+---
+
+## Project 6: DHCP + DNS Server Setup
+
+Configured a dedicated server device to provide both DHCP and DNS services to a LAN, replacing router-based DHCP with a more realistic dedicated-server setup, and adding name resolution on top.
+
+### What I did
+- Added a Server device to the LAN with a static IP
+- Configured and enabled a DHCP pool on the server, correctly excluding the server's own address after initially misconfiguring the pool to include itself
+- Enabled DNS services on the same server
+- Added a DNS record mapping a hostname to an IP address
+- Set PCs to obtain IP addresses automatically via DHCP
+- Tested name resolution by pinging a hostname instead of an IP, confirming DNS correctly resolved to the target address
+
+### Tools used
+- Cisco Packet Tracer
+
+### What I learned
+- DHCP and DNS are commonly run together on the same server in real small-to-medium networks, not necessarily separated
+- A DHCP server's address pool must exclude its own IP, otherwise it can end up trying to hand out its own address
+- The difference between a DNS resolution failure and a reachability failure — a "destination unreachable" result with the correct IP showing means DNS worked, the issue is routing/connectivity, not name resolution
+- Servers need a static IP themselves before they can reliably serve DHCP/DNS to other devices
+
+### Screenshots
+
+<img width="1366" height="736" alt="Screenshot_2026-08-19_23-50-52" src="https://github.com/user-attachments/assets/032f6077-dc23-4249-9986-5667061f532a" />
+<img width="1366" height="733" alt="Screenshot_2026-08-19_23-51-05" src="https://github.com/user-attachments/assets/e535970c-b1a2-4a83-8fc0-9e0c3386d740" />
+<img width="1366" height="736" alt="Screenshot_2026-08-19_23-53-08" src="https://github.com/user-attachments/assets/de502c06-cef6-49ca-b51b-6bf5740530f7" />
+<img width="1366" height="701" alt="Screenshot_2026-08-19_23-53-26" src="https://github.com/user-attachments/assets/81fd8420-90df-4d53-9a73-1704f646af9c" />
